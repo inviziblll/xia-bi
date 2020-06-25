@@ -1,0 +1,15 @@
+bi:
+    container_name: bi
+    restart: always
+    environment:
+      - VIRTUAL_HOST=olapmi.mi-shop.com
+      - VIRTUAL_PROTO=fastcgi
+      - VIRTUAL_PORT=9000
+      - VIRTUAL_ROOT=/var/www/html/bi/backend/public/
+      - HTTPS_METHOD=nohttps
+    build: .
+    volumes:
+      - ./:/var/www/html/bi
+    working_dir: /var/www/html/bi
+    volumes_from:
+     - nginx

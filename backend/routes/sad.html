@@ -1,0 +1,2910 @@
+Router {#25
+#events: Dispatcher {#26
+#container: Application {#2
+#basePath: "/var/www/html/CabinetXiaomi"
+#hasBeenBootstrapped: true
+#booted: false
+#bootingCallbacks: []
+#bootedCallbacks: []
+#terminatingCallbacks: []
+#serviceProviders: & array:21 [
+0 => EventServiceProvider {#6 …}
+1 => LogServiceProvider {#8
+#app: Application {#2}
+#defer: false
+}
+2 => RoutingServiceProvider {#10
+#app: Application {#2}
+#defer: false
+}
+3 => AuthServiceProvider {#38
+#app: Application {#2}
+#defer: false
+}
+4 => CookieServiceProvider {#49
+#app: Application {#2}
+#defer: false
+}
+5 => DatabaseServiceProvider {#52
+#app: Application {#2}
+#defer: false
+}
+6 => EncryptionServiceProvider {#59
+#app: Application {#2}
+#defer: false
+}
+7 => FilesystemServiceProvider {#61
+#app: Application {#2}
+#defer: false
+}
+8 => FormRequestServiceProvider {#67
+#app: Application {#2}
+#defer: false
+}
+9 => FoundationServiceProvider {#66
+#providers: array:1 [
+0 => "Illuminate\Foundation\Providers\FormRequestServiceProvider"
+]
+#instances: array:1 [
+0 => FormRequestServiceProvider {#67}
+]
+#app: Application {#2}
+#defer: false
+}
+10 => NotificationServiceProvider {#70
+#app: Application {#2}
+#defer: false
+}
+11 => PaginationServiceProvider {#72
+#app: Application {#2}
+#defer: false
+}
+12 => SessionServiceProvider {#76
+#app: Application {#2}
+#defer: false
+}
+13 => ViewServiceProvider {#80
+#app: Application {#2}
+#defer: false
+}
+14 => ServiceProvider {#84
+#defer: false
+#app: Application {#2}
+}
+15 => L5SwaggerServiceProvider {#86
+#app: Application {#2}
+#defer: false
+}
+16 => TrustedProxyServiceProvider {#88
+#app: Application {#2}
+#defer: false
+}
+17 => AppServiceProvider {#89
+#app: Application {#2}
+#defer: false
+}
+18 => AuthServiceProvider {#90
+#policies: array:1 [
+"App\Model" => "App\Policies\ModelPolicy"
+]
+#app: Application {#2}
+#defer: false
+}
+19 => EventServiceProvider {#91
+#listen: array:1 [
+"App\Events\Event" => array:1 [
+0 => "App\Listeners\EventListener"
+]
+]
+#subscribe: []
+#app: Application {#2}
+#defer: false
+}
+20 => & RouteServiceProvider {#92
+#namespace: "App\Http\Controllers"
+#app: Application {#2}
+#defer: false
+}
+]
+#loadedProviders: array:21 [
+"Illuminate\Events\EventServiceProvider" => true
+"Illuminate\Log\LogServiceProvider" => true
+"Illuminate\Routing\RoutingServiceProvider" => true
+"Illuminate\Auth\AuthServiceProvider" => true
+"Illuminate\Cookie\CookieServiceProvider" => true
+"Illuminate\Database\DatabaseServiceProvider" => true
+"Illuminate\Encryption\EncryptionServiceProvider" => true
+"Illuminate\Filesystem\FilesystemServiceProvider" => true
+"Illuminate\Foundation\Providers\FormRequestServiceProvider" => true
+"Illuminate\Foundation\Providers\FoundationServiceProvider" => true
+"Illuminate\Notifications\NotificationServiceProvider" => true
+"Illuminate\Pagination\PaginationServiceProvider" => true
+"Illuminate\Session\SessionServiceProvider" => true
+"Illuminate\View\ViewServiceProvider" => true
+"Barryvdh\Cors\ServiceProvider" => true
+"L5Swagger\L5SwaggerServiceProvider" => true
+"Fideloper\Proxy\TrustedProxyServiceProvider" => true
+"App\Providers\AppServiceProvider" => true
+"App\Providers\AuthServiceProvider" => true
+"App\Providers\EventServiceProvider" => true
+"App\Providers\RouteServiceProvider" => true
+]
+#deferredServices: array:100 [
+"Illuminate\Broadcasting\BroadcastManager" => "Illuminate\Broadcasting\BroadcastServiceProvider"
+"Illuminate\Contracts\Broadcasting\Factory" => "Illuminate\Broadcasting\BroadcastServiceProvider"
+"Illuminate\Contracts\Broadcasting\Broadcaster" => "Illuminate\Broadcasting\BroadcastServiceProvider"
+"Illuminate\Bus\Dispatcher" => "Illuminate\Bus\BusServiceProvider"
+"Illuminate\Contracts\Bus\Dispatcher" => "Illuminate\Bus\BusServiceProvider"
+"Illuminate\Contracts\Bus\QueueingDispatcher" => "Illuminate\Bus\BusServiceProvider"
+"cache" => "Illuminate\Cache\CacheServiceProvider"
+"cache.store" => "Illuminate\Cache\CacheServiceProvider"
+"memcached.connector" => "Illuminate\Cache\CacheServiceProvider"
+"command.cache.clear" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.cache.forget" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.clear-compiled" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.auth.resets.clear" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.config.cache" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.config.clear" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.down" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.environment" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.key.generate" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.migrate" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.migrate.fresh" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.migrate.install" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.migrate.refresh" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.migrate.reset" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.migrate.rollback" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.migrate.status" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.package.discover" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.preset" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.queue.failed" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.queue.flush" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.queue.forget" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.queue.listen" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.queue.restart" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.queue.retry" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.queue.work" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.route.cache" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.route.clear" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.route.list" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.seed" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"Illuminate\Console\Scheduling\ScheduleFinishCommand" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"Illuminate\Console\Scheduling\ScheduleRunCommand" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.storage.link" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.up" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.view.cache" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.view.clear" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.app.name" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.auth.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.cache.table" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.channel.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.console.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.controller.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.event.generate" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.event.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.exception.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.factory.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.job.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.listener.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.mail.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.middleware.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.migrate.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.model.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.notification.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.notification.table" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.policy.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.provider.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.queue.failed-table" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.queue.table" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.request.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.resource.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.rule.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.seeder.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.session.table" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.serve" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.test.make" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"command.vendor.publish" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"migrator" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"migration.repository" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"migration.creator" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"composer" => "Illuminate\Foundation\Providers\ConsoleSupportServiceProvider"
+"hash" => "Illuminate\Hashing\HashServiceProvider"
+"hash.driver" => "Illuminate\Hashing\HashServiceProvider"
+"mailer" => "Illuminate\Mail\MailServiceProvider"
+"swift.mailer" => "Illuminate\Mail\MailServiceProvider"
+"swift.transport" => "Illuminate\Mail\MailServiceProvider"
+"Illuminate\Mail\Markdown" => "Illuminate\Mail\MailServiceProvider"
+"Illuminate\Contracts\Pipeline\Hub" => "Illuminate\Pipeline\PipelineServiceProvider"
+"queue" => "Illuminate\Queue\QueueServiceProvider"
+"queue.worker" => "Illuminate\Queue\QueueServiceProvider"
+"queue.listener" => "Illuminate\Queue\QueueServiceProvider"
+"queue.failer" => "Illuminate\Queue\QueueServiceProvider"
+"queue.connection" => "Illuminate\Queue\QueueServiceProvider"
+"redis" => "Illuminate\Redis\RedisServiceProvider"
+"redis.connection" => "Illuminate\Redis\RedisServiceProvider"
+"auth.password" => "Illuminate\Auth\Passwords\PasswordResetServiceProvider"
+"auth.password.broker" => "Illuminate\Auth\Passwords\PasswordResetServiceProvider"
+"translator" => "Illuminate\Translation\TranslationServiceProvider"
+"translation.loader" => "Illuminate\Translation\TranslationServiceProvider"
+"validator" => "Illuminate\Validation\ValidationServiceProvider"
+"validation.presence" => "Illuminate\Validation\ValidationServiceProvider"
+"command.tinker" => "Laravel\Tinker\TinkerServiceProvider"
+"NunoMaduro\Collision\Contracts\Provider" => "NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider"
+]
+#databasePath: null
+#storagePath: null
+#environmentPath: null
+#environmentFile: ".env"
+#namespace: null
+#resolved: array:19 [
+"events" => true
+"router" => true
+"App\Http\Kernel" => true
+"Illuminate\Contracts\Http\Kernel" => true
+"Illuminate\Foundation\Bootstrap\LoadEnvironmentVariables" => true
+"Illuminate\Foundation\Bootstrap\LoadConfiguration" => true
+"Illuminate\Foundation\Bootstrap\HandleExceptions" => true
+"env" => true
+"Illuminate\Foundation\Bootstrap\RegisterFacades" => true
+"Illuminate\Foundation\Bootstrap\RegisterProviders" => true
+"Illuminate\Foundation\Bootstrap\BootProviders" => true
+"db.factory" => true
+"db" => true
+"view.engine.resolver" => true
+"files" => true
+"view.finder" => true
+"view" => true
+"Illuminate\Contracts\Auth\Access\Gate" => true
+"url" => true
+]
+#bindings: array:39 [
+"events" => array:2 [
+"concrete" => Closure {#7
+class: "Illuminate\Events\EventServiceProvider"
+this: EventServiceProvider {#6 …}
+parameters: {
+$app: {}
+}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Events/EventServiceProvider.php"
+line: "17 to 21"
+}
+"shared" => true
+]
+"log" => array:2 [
+"concrete" => Closure {#9
+class: "Illuminate\Log\LogServiceProvider"
+this: LogServiceProvider {#8}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Log/LogServiceProvider.php"
+line: "16 to 18"
+}
+"shared" => true
+]
+"router" => array:2 [
+"concrete" => Closure {#11
+class: "Illuminate\Routing\RoutingServiceProvider"
+this: RoutingServiceProvider {#10}
+parameters: {
+$app: {}
+}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php"
+line: "39 to 41"
+}
+"shared" => true
+]
+"url" => array:2 [
+"concrete" => Closure {#12
+class: "Illuminate\Routing\RoutingServiceProvider"
+this: RoutingServiceProvider {#10}
+parameters: {
+$app: {}
+}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php"
+line: "51 to 84"
+}
+"shared" => true
+]
+"redirect" => array:2 [
+"concrete" => Closure {#13
+class: "Illuminate\Routing\RoutingServiceProvider"
+this: RoutingServiceProvider {#10}
+parameters: {
+$app: {}
+}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php"
+line: "106 to 117"
+}
+"shared" => true
+]
+"Psr\Http\Message\ServerRequestInterface" => array:2 [
+"concrete" => Closure {#14
+class: "Illuminate\Routing\RoutingServiceProvider"
+this: RoutingServiceProvider {#10}
+parameters: {
+$app: {}
+}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php"
+line: "127 to 129"
+}
+"shared" => false
+]
+"Psr\Http\Message\ResponseInterface" => array:2 [
+"concrete" => Closure {#15
+class: "Illuminate\Routing\RoutingServiceProvider"
+this: RoutingServiceProvider {#10}
+parameters: {
+$app: {}
+}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php"
+line: "139 to 141"
+}
+"shared" => false
+]
+"Illuminate\Contracts\Routing\ResponseFactory" => array:2 [
+"concrete" => Closure {#16
+class: "Illuminate\Routing\RoutingServiceProvider"
+this: RoutingServiceProvider {#10}
+parameters: {
+$app: {}
+}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php"
+line: "151 to 153"
+}
+"shared" => true
+]
+"Illuminate\Routing\Contracts\ControllerDispatcher" => array:2 [
+"concrete" => Closure {#17
+class: "Illuminate\Routing\RoutingServiceProvider"
+this: RoutingServiceProvider {#10}
+parameters: {
+$app: {}
+}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php"
+line: "163 to 165"
+}
+"shared" => true
+]
+"Illuminate\Contracts\Http\Kernel" => array:2 [
+"concrete" => Closure {#18
+class: "Illuminate\Container\Container"
+this: Application {#2}
+parameters: {
+$container: {}
+$parameters: { …1}
+}
+use: { …2}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Container/Container.php"
+line: "251 to 257"
+}
+"shared" => true
+]
+"Illuminate\Contracts\Console\Kernel" => array:2 [
+"concrete" => Closure {#19
+class: "Illuminate\Container\Container"
+this: Application {#2}
+parameters: { …2}
+use: { …2}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Container/Container.php"
+line: "251 to 257"
+}
+"shared" => true
+]
+"Illuminate\Contracts\Debug\ExceptionHandler" => array:2 [
+"concrete" => Closure {#20
+class: "Illuminate\Container\Container"
+this: Application {#2}
+parameters: { …2}
+use: { …2}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Container/Container.php"
+line: "251 to 257"
+}
+"shared" => true
+]
+"env" => array:2 [
+"concrete" => Closure {#35
+class: "Illuminate\Container\Container"
+this: Application {#2}
+use: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Container/Container.php"
+line: "1222 to 1224"
+}
+"shared" => false
+]
+"auth" => array:2 [
+"concrete" => Closure {#22
+class: "Illuminate\Auth\AuthServiceProvider"
+this: AuthServiceProvider {#38}
+parameters: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php"
+line: "35 to 42"
+}
+"shared" => true
+]
+"auth.driver" => array:2 [
+"concrete" => Closure {#41
+class: "Illuminate\Auth\AuthServiceProvider"
+this: AuthServiceProvider {#38}
+parameters: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php"
+line: "44 to 46"
+}
+"shared" => true
+]
+"Illuminate\Contracts\Auth\Authenticatable" => array:2 [
+"concrete" => Closure {#39
+class: "Illuminate\Auth\AuthServiceProvider"
+this: AuthServiceProvider {#38}
+parameters: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php"
+line: "57 to 59"
+}
+"shared" => false
+]
+"Illuminate\Contracts\Auth\Access\Gate" => array:2 [
+"concrete" => Closure {#36
+class: "Illuminate\Auth\AuthServiceProvider"
+this: AuthServiceProvider {#38}
+parameters: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php"
+line: "70 to 74"
+}
+"shared" => true
+]
+"cookie" => array:2 [
+"concrete" => Closure {#51
+class: "Illuminate\Cookie\CookieServiceProvider"
+this: CookieServiceProvider {#49}
+parameters: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Cookie/CookieServiceProvider.php"
+line: "16 to 22"
+}
+"shared" => true
+]
+"db.factory" => array:2 [
+"concrete" => Closure {#53
+class: "Illuminate\Database\DatabaseServiceProvider"
+this: DatabaseServiceProvider {#52}
+parameters: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php"
+line: "54 to 56"
+}
+"shared" => true
+]
+"db" => array:2 [
+"concrete" => Closure {#54
+class: "Illuminate\Database\DatabaseServiceProvider"
+this: DatabaseServiceProvider {#52}
+parameters: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php"
+line: "61 to 63"
+}
+"shared" => true
+]
+"db.connection" => array:2 [
+"concrete" => Closure {#55
+class: "Illuminate\Database\DatabaseServiceProvider"
+this: DatabaseServiceProvider {#52}
+parameters: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php"
+line: "65 to 67"
+}
+"shared" => false
+]
+"Faker\Generator" => array:2 [
+"concrete" => Closure {#56
+class: "Illuminate\Database\DatabaseServiceProvider"
+this: DatabaseServiceProvider {#52}
+parameters: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php"
+line: "77 to 79"
+}
+"shared" => true
+]
+"Illuminate\Database\Eloquent\Factory" => array:2 [
+"concrete" => Closure {#57
+class: "Illuminate\Database\DatabaseServiceProvider"
+this: DatabaseServiceProvider {#52}
+parameters: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php"
+line: "81 to 85"
+}
+"shared" => true
+]
+"Illuminate\Contracts\Queue\EntityResolver" => array:2 [
+"concrete" => Closure {#58
+class: "Illuminate\Database\DatabaseServiceProvider"
+this: DatabaseServiceProvider {#52}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php"
+line: "95 to 97"
+}
+"shared" => true
+]
+"encrypter" => array:2 [
+"concrete" => Closure {#60
+class: "Illuminate\Encryption\EncryptionServiceProvider"
+this: EncryptionServiceProvider {#59}
+parameters: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php"
+line: "18 to 29"
+}
+"shared" => true
+]
+"files" => array:2 [
+"concrete" => Closure {#62
+class: "Illuminate\Filesystem\FilesystemServiceProvider"
+this: FilesystemServiceProvider {#61}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php"
+line: "28 to 30"
+}
+"shared" => true
+]
+"filesystem" => array:2 [
+"concrete" => Closure {#63
+class: "Illuminate\Filesystem\FilesystemServiceProvider"
+this: FilesystemServiceProvider {#61}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php"
+line: "58 to 60"
+}
+"shared" => true
+]
+"filesystem.disk" => array:2 [
+"concrete" => Closure {#64
+class: "Illuminate\Filesystem\FilesystemServiceProvider"
+this: FilesystemServiceProvider {#61}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php"
+line: "42 to 44"
+}
+"shared" => true
+]
+"filesystem.cloud" => array:2 [
+"concrete" => Closure {#65
+class: "Illuminate\Filesystem\FilesystemServiceProvider"
+this: FilesystemServiceProvider {#61}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php"
+line: "46 to 48"
+}
+"shared" => true
+]
+"Illuminate\Notifications\ChannelManager" => array:2 [
+"concrete" => Closure {#71
+class: "Illuminate\Notifications\NotificationServiceProvider"
+this: NotificationServiceProvider {#70}
+parameters: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Notifications/NotificationServiceProvider.php"
+line: "34 to 36"
+}
+"shared" => true
+]
+"session" => array:2 [
+"concrete" => Closure {#77
+class: "Illuminate\Session\SessionServiceProvider"
+this: SessionServiceProvider {#76}
+parameters: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Session/SessionServiceProvider.php"
+line: "31 to 33"
+}
+"shared" => true
+]
+"session.store" => array:2 [
+"concrete" => Closure {#78
+class: "Illuminate\Session\SessionServiceProvider"
+this: SessionServiceProvider {#76}
+parameters: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Session/SessionServiceProvider.php"
+line: "43 to 48"
+}
+"shared" => true
+]
+"Illuminate\Session\Middleware\StartSession" => array:2 [
+"concrete" => Closure {#79
+class: "Illuminate\Container\Container"
+this: Application {#2}
+parameters: { …2}
+use: { …2}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Container/Container.php"
+line: "251 to 257"
+}
+"shared" => true
+]
+"view" => array:2 [
+"concrete" => Closure {#81
+class: "Illuminate\View\ViewServiceProvider"
+this: ViewServiceProvider {#80}
+parameters: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php"
+line: "35 to 53"
+}
+"shared" => true
+]
+"view.finder" => array:2 [
+"concrete" => Closure {#82
+class: "Illuminate\View\ViewServiceProvider"
+this: ViewServiceProvider {#80}
+parameters: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php"
+line: "76 to 78"
+}
+"shared" => false
+]
+"view.engine.resolver" => array:2 [
+"concrete" => Closure {#83
+class: "Illuminate\View\ViewServiceProvider"
+this: ViewServiceProvider {#80}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php"
+line: "88 to 99"
+}
+"shared" => true
+]
+"Asm89\Stack\CorsService" => array:2 [
+"concrete" => Closure {#85
+class: "Barryvdh\Cors\ServiceProvider"
+this: ServiceProvider {#84}
+parameters: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/barryvdh/laravel-cors/src/ServiceProvider.php"
+line: "25 to 37"
+}
+"shared" => true
+]
+"command.l5-swagger.generate" => array:2 [
+"concrete" => Closure {#87
+class: "L5Swagger\L5SwaggerServiceProvider"
+this: L5SwaggerServiceProvider {#86}
+file: "/var/www/html/CabinetXiaomi/vendor/darkaonline/l5-swagger/src/L5SwaggerServiceProvider.php"
+line: "50 to 52"
+}
+"shared" => true
+]
+"blade.compiler" => array:2 [
+"concrete" => Closure {#97
+class: "Illuminate\View\ViewServiceProvider"
+this: ViewServiceProvider {#80}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php"
+line: "139 to 143"
+}
+"shared" => true
+]
+]
+#methodBindings: []
+#instances: array:25 [
+"path" => "/var/www/html/CabinetXiaomi/app"
+"path.base" => "/var/www/html/CabinetXiaomi"
+"path.lang" => "/var/www/html/CabinetXiaomi/resources/lang"
+"path.config" => "/var/www/html/CabinetXiaomi/config"
+"path.public" => "/var/www/html/CabinetXiaomi/public"
+"path.storage" => "/var/www/html/CabinetXiaomi/storage"
+"path.database" => "/var/www/html/CabinetXiaomi/database"
+"path.resources" => "/var/www/html/CabinetXiaomi/resources"
+"path.bootstrap" => "/var/www/html/CabinetXiaomi/bootstrap"
+"app" => Application {#2}
+"Illuminate\Container\Container" => Application {#2}
+"Illuminate\Foundation\PackageManifest" => PackageManifest {#4
++files: Filesystem {#5}
++basePath: "/var/www/html/CabinetXiaomi"
++vendorPath: "/var/www/html/CabinetXiaomi/vendor"
++manifestPath: "/var/www/html/CabinetXiaomi/bootstrap/cache/packages.php"
++manifest: array:5 [
+"barryvdh/laravel-cors" => array:1 [ …1]
+"darkaonline/l5-swagger" => array:1 [ …1]
+"fideloper/proxy" => array:1 [ …1]
+"laravel/tinker" => array:1 [ …1]
+"nunomaduro/collision" => array:1 [ …1]
+]
+}
+"events" => Dispatcher {#26}
+"router" => Router {#25}
+"Illuminate\Contracts\Http\Kernel" => Kernel {#29
+#middleware: array:6 [
+0 => "Barryvdh\Cors\HandlePreflight"
+1 => "Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode"
+2 => "Illuminate\Foundation\Http\Middleware\ValidatePostSize"
+3 => "App\Http\Middleware\TrimStrings"
+4 => "Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull"
+5 => "App\Http\Middleware\TrustProxies"
+]
+#middlewareGroups: array:2 [
+"web" => array:6 [ …6]
+"api" => array:3 [ …3]
+]
+#routeMiddleware: array:8 [
+"auth" => "Illuminate\Auth\Middleware\Authenticate"
+"auth.basic" => "Illuminate\Auth\Middleware\AuthenticateWithBasicAuth"
+"bindings" => "Illuminate\Routing\Middleware\SubstituteBindings"
+"cache.headers" => "Illuminate\Http\Middleware\SetCacheHeaders"
+"can" => "Illuminate\Auth\Middleware\Authorize"
+"guest" => "App\Http\Middleware\RedirectIfAuthenticated"
+"signed" => "Illuminate\Routing\Middleware\ValidateSignature"
+"throttle" => "Illuminate\Routing\Middleware\ThrottleRequests"
+]
+#app: Application {#2}
+#router: Router {#25}
+#bootstrappers: array:6 [
+0 => "Illuminate\Foundation\Bootstrap\LoadEnvironmentVariables"
+1 => "Illuminate\Foundation\Bootstrap\LoadConfiguration"
+2 => "Illuminate\Foundation\Bootstrap\HandleExceptions"
+3 => "Illuminate\Foundation\Bootstrap\RegisterFacades"
+4 => "Illuminate\Foundation\Bootstrap\RegisterProviders"
+5 => "Illuminate\Foundation\Bootstrap\BootProviders"
+]
+#middlewarePriority: array:6 [
+0 => "Illuminate\Session\Middleware\StartSession"
+1 => "Illuminate\View\Middleware\ShareErrorsFromSession"
+2 => "Illuminate\Auth\Middleware\Authenticate"
+3 => "Illuminate\Session\Middleware\AuthenticateSession"
+4 => "Illuminate\Routing\Middleware\SubstituteBindings"
+5 => "Illuminate\Auth\Middleware\Authorize"
+]
+}
+"request" => Request {#42
+#json: null
+#convertedFiles: null
+#userResolver: null
+#routeResolver: null
++attributes: ParameterBag {#44
+#parameters: []
+}
++request: ParameterBag {#43
+#parameters: []
+}
++query: ParameterBag {#50
+#parameters: array:1 [ …1]
+}
++server: ServerBag {#46
+#parameters: array:56 [ …56]
+}
++files: FileBag {#47
+#parameters: []
+}
++cookies: ParameterBag {#45
+#parameters: []
+}
++headers: HeaderBag {#48
+#headers: array:9 [ …9]
+#cacheControl: array:1 [ …1]
+}
+#content: null
+#languages: null
+#charsets: null
+#encodings: null
+#acceptableContentTypes: null
+#pathInfo: null
+#requestUri: null
+#baseUrl: null
+#basePath: null
+#method: null
+#format: null
+#session: null
+#locale: null
+#defaultLocale: "en"
+-isHostValid: true
+-isForwardedValid: true
+pathInfo: "/api/search/User"
+requestUri: "/api/search/User?name=Alex"
+baseUrl: ""
+basePath: ""
+method: "POST"
+format: "html"
+}
+"config" => Repository {#33
+#items: array:16 [
+"app" => array:11 [ …11]
+"auth" => array:4 [ …4]
+"broadcasting" => array:2 [ …2]
+"cache" => array:3 [ …3]
+"cors" => array:7 [ …7]
+"database" => array:3 [ …3]
+"filesystems" => array:3 [ …3]
+"hashing" => array:1 [ …1]
+"logging" => array:2 [ …2]
+"mail" => array:9 [ …9]
+"queue" => array:3 [ …3]
+"services" => array:4 [ …4]
+"session" => array:15 [ …15]
+"view" => array:2 [ …2]
+"l5-swagger" => array:11 [ …11]
+"trustedproxy" => array:2 [ …2]
+]
+}
+"db.factory" => ConnectionFactory {#40
+#container: Application {#2}
+}
+"db" => DatabaseManager {#34
+#app: Application {#2}
+#factory: ConnectionFactory {#40}
+#connections: []
+#extensions: []
+}
+"view.engine.resolver" => EngineResolver {#94
+#resolvers: array:3 [
+"file" => Closure {#95 …4}
+"php" => Closure {#96 …4}
+"blade" => Closure {#98 …4}
+]
+#resolved: []
+}
+"files" => Filesystem {#100}
+"view" => Factory {#101
+#engines: EngineResolver {#94}
+#finder: FileViewFinder {#99
+#files: Filesystem {#100}
+#paths: array:1 [ …1]
+#views: []
+#hints: array:3 [ …3]
+#extensions: array:3 [ …3]
+}
+#events: Dispatcher {#26}
+#container: Application {#2}
+#shared: array:2 [
+"__env" => Factory {#101}
+"app" => Application {#2}
+]
+#extensions: array:3 [
+"blade.php" => "blade"
+"php" => "php"
+"css" => "file"
+]
+#composers: []
+#renderCount: 0
+#componentStack: []
+#componentData: []
+#slots: []
+#slotStack: []
+#sections: []
+#sectionStack: []
+#loopsStack: []
+#pushes: []
+#prepends: []
+#pushStack: []
+#translationReplacements: []
+}
+"Illuminate\Contracts\Auth\Access\Gate" => Gate {#107
+#container: Application {#2}
+#userResolver: Closure {#108
+class: "Illuminate\Auth\AuthServiceProvider"
+this: AuthServiceProvider {#38}
+use: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php"
+line: "71 to 73"
+}
+#abilities: []
+#policies: array:1 [
+"App\Model" => "App\Policies\ModelPolicy"
+]
+#beforeCallbacks: []
+#afterCallbacks: []
+}
+"routes" => RouteCollection {#28
+#routes: array:7 [
+"GET" => array:34 [
+"api/documentation" => Route {#103
++uri: "api/documentation"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"as" => "l5-swagger.api"
+"middleware" => []
+"uses" => "\L5Swagger\Http\Controllers\SwaggerController@api"
+"controller" => "\L5Swagger\Http\Controllers\SwaggerController@api"
+"namespace" => "L5Swagger"
+"prefix" => null
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"docs/{jsonFile?}" => Route {#104
++uri: "docs/{jsonFile?}"
++methods: array:7 [
+0 => "GET"
+1 => "HEAD"
+2 => "POST"
+3 => "PUT"
+4 => "PATCH"
+5 => "DELETE"
+6 => "OPTIONS"
+]
++action: array:7 [
+"as" => "l5-swagger.docs"
+"middleware" => []
+"uses" => "\L5Swagger\Http\Controllers\SwaggerController@docs"
+"controller" => "\L5Swagger\Http\Controllers\SwaggerController@docs"
+"namespace" => "L5Swagger"
+"prefix" => null
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"docs/asset/{asset}" => Route {#105
++uri: "docs/asset/{asset}"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"as" => "l5-swagger.asset"
+"middleware" => []
+"uses" => "\L5Swagger\Http\Controllers\SwaggerAssetController@index"
+"controller" => "\L5Swagger\Http\Controllers\SwaggerAssetController@index"
+"namespace" => "L5Swagger"
+"prefix" => null
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/oauth2-callback" => Route {#106
++uri: "api/oauth2-callback"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"as" => "l5-swagger.oauth2_callback"
+"middleware" => []
+"uses" => "\L5Swagger\Http\Controllers\SwaggerController@oauth2Callback"
+"controller" => "\L5Swagger\Http\Controllers\SwaggerController@oauth2Callback"
+"namespace" => "L5Swagger"
+"prefix" => null
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/user" => Route {#119
++uri: "api/user"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:5 [
+"middleware" => array:2 [ …2]
+"uses" => Closure {#118 …5}
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/test" => Route {#120
++uri: "api/test"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:5 [
+"middleware" => array:1 [ …1]
+"uses" => Closure {#117 …4}
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/divisions" => Route {#123
++uri: "api/divisions"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "divisions.index"
+"uses" => "App\Http\Controllers\DivisionController@index"
+"controller" => "App\Http\Controllers\DivisionController@index"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/divisions/create" => Route {#124
++uri: "api/divisions/create"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "divisions.create"
+"uses" => "App\Http\Controllers\DivisionController@create"
+"controller" => "App\Http\Controllers\DivisionController@create"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/divisions/{division}" => Route {#126
++uri: "api/divisions/{division}"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "divisions.show"
+"uses" => "App\Http\Controllers\DivisionController@show"
+"controller" => "App\Http\Controllers\DivisionController@show"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/divisions/{division}/edit" => Route {#127
++uri: "api/divisions/{division}/edit"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "divisions.edit"
+"uses" => "App\Http\Controllers\DivisionController@edit"
+"controller" => "App\Http\Controllers\DivisionController@edit"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/users" => Route {#130
++uri: "api/users"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "users.index"
+"uses" => "App\Http\Controllers\UserController@index"
+"controller" => "App\Http\Controllers\UserController@index"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/users/create" => Route {#131
++uri: "api/users/create"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "users.create"
+"uses" => "App\Http\Controllers\UserController@create"
+"controller" => "App\Http\Controllers\UserController@create"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/users/{user}" => Route {#133
++uri: "api/users/{user}"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "users.show"
+"uses" => "App\Http\Controllers\UserController@show"
+"controller" => "App\Http\Controllers\UserController@show"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/users/{user}/edit" => Route {#134
++uri: "api/users/{user}/edit"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "users.edit"
+"uses" => "App\Http\Controllers\UserController@edit"
+"controller" => "App\Http\Controllers\UserController@edit"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/companies" => Route {#137
++uri: "api/companies"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "companies.index"
+"uses" => "App\Http\Controllers\CompanyController@index"
+"controller" => "App\Http\Controllers\CompanyController@index"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/companies/create" => Route {#138
++uri: "api/companies/create"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "companies.create"
+"uses" => "App\Http\Controllers\CompanyController@create"
+"controller" => "App\Http\Controllers\CompanyController@create"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/companies/{company}" => Route {#140
++uri: "api/companies/{company}"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "companies.show"
+"uses" => "App\Http\Controllers\CompanyController@show"
+"controller" => "App\Http\Controllers\CompanyController@show"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/companies/{company}/edit" => Route {#141
++uri: "api/companies/{company}/edit"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "companies.edit"
+"uses" => "App\Http\Controllers\CompanyController@edit"
+"controller" => "App\Http\Controllers\CompanyController@edit"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/shifts" => Route {#144
++uri: "api/shifts"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "shifts.index"
+"uses" => "App\Http\Controllers\ShiftController@index"
+"controller" => "App\Http\Controllers\ShiftController@index"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/shifts/create" => Route {#145
++uri: "api/shifts/create"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "shifts.create"
+"uses" => "App\Http\Controllers\ShiftController@create"
+"controller" => "App\Http\Controllers\ShiftController@create"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/shifts/{shift}" => Route {#147
++uri: "api/shifts/{shift}"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "shifts.show"
+"uses" => "App\Http\Controllers\ShiftController@show"
+"controller" => "App\Http\Controllers\ShiftController@show"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/shifts/{shift}/edit" => Route {#148
++uri: "api/shifts/{shift}/edit"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "shifts.edit"
+"uses" => "App\Http\Controllers\ShiftController@edit"
+"controller" => "App\Http\Controllers\ShiftController@edit"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/products" => Route {#151
++uri: "api/products"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "products.index"
+"uses" => "App\Http\Controllers\ProductController@index"
+"controller" => "App\Http\Controllers\ProductController@index"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/products/create" => Route {#152
++uri: "api/products/create"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "products.create"
+"uses" => "App\Http\Controllers\ProductController@create"
+"controller" => "App\Http\Controllers\ProductController@create"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/products/{product}" => Route {#154
++uri: "api/products/{product}"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "products.show"
+"uses" => "App\Http\Controllers\ProductController@show"
+"controller" => "App\Http\Controllers\ProductController@show"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/products/{product}/edit" => Route {#155
++uri: "api/products/{product}/edit"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "products.edit"
+"uses" => "App\Http\Controllers\ProductController@edit"
+"controller" => "App\Http\Controllers\ProductController@edit"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/roles" => Route {#158
++uri: "api/roles"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "roles.index"
+"uses" => "App\Http\Controllers\RoleController@index"
+"controller" => "App\Http\Controllers\RoleController@index"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/roles/create" => Route {#159
++uri: "api/roles/create"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "roles.create"
+"uses" => "App\Http\Controllers\RoleController@create"
+"controller" => "App\Http\Controllers\RoleController@create"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/roles/{role}" => Route {#161
++uri: "api/roles/{role}"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "roles.show"
+"uses" => "App\Http\Controllers\RoleController@show"
+"controller" => "App\Http\Controllers\RoleController@show"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/roles/{role}/edit" => Route {#162
++uri: "api/roles/{role}/edit"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "roles.edit"
+"uses" => "App\Http\Controllers\RoleController@edit"
+"controller" => "App\Http\Controllers\RoleController@edit"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/shops" => Route {#165
++uri: "api/shops"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "shops.index"
+"uses" => "App\Http\Controllers\ShopController@index"
+"controller" => "App\Http\Controllers\ShopController@index"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/shops/create" => Route {#166
++uri: "api/shops/create"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "shops.create"
+"uses" => "App\Http\Controllers\ShopController@create"
+"controller" => "App\Http\Controllers\ShopController@create"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/shops/{shop}" => Route {#168
++uri: "api/shops/{shop}"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "shops.show"
+"uses" => "App\Http\Controllers\ShopController@show"
+"controller" => "App\Http\Controllers\ShopController@show"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/shops/{shop}/edit" => Route {#169
++uri: "api/shops/{shop}/edit"
++methods: array:2 [
+0 => "GET"
+1 => "HEAD"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "shops.edit"
+"uses" => "App\Http\Controllers\ShopController@edit"
+"controller" => "App\Http\Controllers\ShopController@edit"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+]
+"HEAD" => array:34 [
+"api/documentation" => Route {#103}
+"docs/{jsonFile?}" => Route {#104}
+"docs/asset/{asset}" => Route {#105}
+"api/oauth2-callback" => Route {#106}
+"api/user" => Route {#119}
+"api/test" => Route {#120}
+"api/divisions" => Route {#123}
+"api/divisions/create" => Route {#124}
+"api/divisions/{division}" => Route {#126}
+"api/divisions/{division}/edit" => Route {#127}
+"api/users" => Route {#130}
+"api/users/create" => Route {#131}
+"api/users/{user}" => Route {#133}
+"api/users/{user}/edit" => Route {#134}
+"api/companies" => Route {#137}
+"api/companies/create" => Route {#138}
+"api/companies/{company}" => Route {#140}
+"api/companies/{company}/edit" => Route {#141}
+"api/shifts" => Route {#144}
+"api/shifts/create" => Route {#145}
+"api/shifts/{shift}" => Route {#147}
+"api/shifts/{shift}/edit" => Route {#148}
+"api/products" => Route {#151}
+"api/products/create" => Route {#152}
+"api/products/{product}" => Route {#154}
+"api/products/{product}/edit" => Route {#155}
+"api/roles" => Route {#158}
+"api/roles/create" => Route {#159}
+"api/roles/{role}" => Route {#161}
+"api/roles/{role}/edit" => Route {#162}
+"api/shops" => Route {#165}
+"api/shops/create" => Route {#166}
+"api/shops/{shop}" => Route {#168}
+"api/shops/{shop}/edit" => Route {#169}
+]
+"POST" => array:8 [
+"docs/{jsonFile?}" => Route {#104}
+"api/divisions" => Route {#125
++uri: "api/divisions"
++methods: array:1 [
+0 => "POST"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "divisions.store"
+"uses" => "App\Http\Controllers\DivisionController@store"
+"controller" => "App\Http\Controllers\DivisionController@store"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/users" => Route {#132
++uri: "api/users"
++methods: array:1 [
+0 => "POST"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "users.store"
+"uses" => "App\Http\Controllers\UserController@store"
+"controller" => "App\Http\Controllers\UserController@store"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/companies" => Route {#139
++uri: "api/companies"
++methods: array:1 [
+0 => "POST"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "companies.store"
+"uses" => "App\Http\Controllers\CompanyController@store"
+"controller" => "App\Http\Controllers\CompanyController@store"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/shifts" => Route {#146
++uri: "api/shifts"
++methods: array:1 [
+0 => "POST"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "shifts.store"
+"uses" => "App\Http\Controllers\ShiftController@store"
+"controller" => "App\Http\Controllers\ShiftController@store"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/products" => Route {#153
++uri: "api/products"
++methods: array:1 [
+0 => "POST"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "products.store"
+"uses" => "App\Http\Controllers\ProductController@store"
+"controller" => "App\Http\Controllers\ProductController@store"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/roles" => Route {#160
++uri: "api/roles"
++methods: array:1 [
+0 => "POST"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "roles.store"
+"uses" => "App\Http\Controllers\RoleController@store"
+"controller" => "App\Http\Controllers\RoleController@store"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/shops" => Route {#167
++uri: "api/shops"
++methods: array:1 [
+0 => "POST"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "shops.store"
+"uses" => "App\Http\Controllers\ShopController@store"
+"controller" => "App\Http\Controllers\ShopController@store"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+]
+"PUT" => array:8 [
+"docs/{jsonFile?}" => Route {#104}
+"api/divisions/{division}" => Route {#128
++uri: "api/divisions/{division}"
++methods: array:2 [
+0 => "PUT"
+1 => "PATCH"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "divisions.update"
+"uses" => "App\Http\Controllers\DivisionController@update"
+"controller" => "App\Http\Controllers\DivisionController@update"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/users/{user}" => Route {#135
++uri: "api/users/{user}"
++methods: array:2 [
+0 => "PUT"
+1 => "PATCH"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "users.update"
+"uses" => "App\Http\Controllers\UserController@update"
+"controller" => "App\Http\Controllers\UserController@update"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/companies/{company}" => Route {#142
++uri: "api/companies/{company}"
++methods: array:2 [
+0 => "PUT"
+1 => "PATCH"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "companies.update"
+"uses" => "App\Http\Controllers\CompanyController@update"
+"controller" => "App\Http\Controllers\CompanyController@update"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/shifts/{shift}" => Route {#149
++uri: "api/shifts/{shift}"
++methods: array:2 [
+0 => "PUT"
+1 => "PATCH"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "shifts.update"
+"uses" => "App\Http\Controllers\ShiftController@update"
+"controller" => "App\Http\Controllers\ShiftController@update"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/products/{product}" => Route {#156
++uri: "api/products/{product}"
++methods: array:2 [
+0 => "PUT"
+1 => "PATCH"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "products.update"
+"uses" => "App\Http\Controllers\ProductController@update"
+"controller" => "App\Http\Controllers\ProductController@update"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/roles/{role}" => Route {#163
++uri: "api/roles/{role}"
++methods: array:2 [
+0 => "PUT"
+1 => "PATCH"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "roles.update"
+"uses" => "App\Http\Controllers\RoleController@update"
+"controller" => "App\Http\Controllers\RoleController@update"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/shops/{shop}" => Route {#170
++uri: "api/shops/{shop}"
++methods: array:2 [
+0 => "PUT"
+1 => "PATCH"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "shops.update"
+"uses" => "App\Http\Controllers\ShopController@update"
+"controller" => "App\Http\Controllers\ShopController@update"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+]
+"PATCH" => array:8 [
+"docs/{jsonFile?}" => Route {#104}
+"api/divisions/{division}" => Route {#128}
+"api/users/{user}" => Route {#135}
+"api/companies/{company}" => Route {#142}
+"api/shifts/{shift}" => Route {#149}
+"api/products/{product}" => Route {#156}
+"api/roles/{role}" => Route {#163}
+"api/shops/{shop}" => Route {#170}
+]
+"DELETE" => array:8 [
+"docs/{jsonFile?}" => Route {#104}
+"api/divisions/{division}" => Route {#129
++uri: "api/divisions/{division}"
++methods: array:1 [
+0 => "DELETE"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "divisions.destroy"
+"uses" => "App\Http\Controllers\DivisionController@destroy"
+"controller" => "App\Http\Controllers\DivisionController@destroy"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/users/{user}" => Route {#136
++uri: "api/users/{user}"
++methods: array:1 [
+0 => "DELETE"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "users.destroy"
+"uses" => "App\Http\Controllers\UserController@destroy"
+"controller" => "App\Http\Controllers\UserController@destroy"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/companies/{company}" => Route {#143
++uri: "api/companies/{company}"
++methods: array:1 [
+0 => "DELETE"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "companies.destroy"
+"uses" => "App\Http\Controllers\CompanyController@destroy"
+"controller" => "App\Http\Controllers\CompanyController@destroy"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/shifts/{shift}" => Route {#150
++uri: "api/shifts/{shift}"
++methods: array:1 [
+0 => "DELETE"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "shifts.destroy"
+"uses" => "App\Http\Controllers\ShiftController@destroy"
+"controller" => "App\Http\Controllers\ShiftController@destroy"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/products/{product}" => Route {#157
++uri: "api/products/{product}"
++methods: array:1 [
+0 => "DELETE"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "products.destroy"
+"uses" => "App\Http\Controllers\ProductController@destroy"
+"controller" => "App\Http\Controllers\ProductController@destroy"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/roles/{role}" => Route {#164
++uri: "api/roles/{role}"
++methods: array:1 [
+0 => "DELETE"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "roles.destroy"
+"uses" => "App\Http\Controllers\RoleController@destroy"
+"controller" => "App\Http\Controllers\RoleController@destroy"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+"api/shops/{shop}" => Route {#171
++uri: "api/shops/{shop}"
++methods: array:1 [
+0 => "DELETE"
+]
++action: array:7 [
+"middleware" => array:1 [ …1]
+"as" => "shops.destroy"
+"uses" => "App\Http\Controllers\ShopController@destroy"
+"controller" => "App\Http\Controllers\ShopController@destroy"
+"namespace" => "App\Http\Controllers"
+"prefix" => "api"
+"where" => []
+]
++isFallback: false
++controller: null
++defaults: []
++wheres: []
++parameters: null
++parameterNames: null
++computedMiddleware: null
++compiled: null
+#router: Router {#25}
+#container: Application {#2}
+}
+]
+"OPTIONS" => array:1 [
+"docs/{jsonFile?}" => Route {#104}
+]
+]
+#allRoutes: array:55 [
+"HEADapi/documentation" => Route {#103}
+"OPTIONSdocs/{jsonFile?}" => Route {#104}
+"HEADdocs/asset/{asset}" => Route {#105}
+"HEADapi/oauth2-callback" => Route {#106}
+"HEADapi/user" => Route {#119}
+"HEADapi/test" => Route {#120}
+"HEADapi/divisions" => Route {#123}
+"HEADapi/divisions/create" => Route {#124}
+"POSTapi/divisions" => Route {#125}
+"HEADapi/divisions/{division}" => Route {#126}
+"HEADapi/divisions/{division}/edit" => Route {#127}
+"PATCHapi/divisions/{division}" => Route {#128}
+"DELETEapi/divisions/{division}" => Route {#129}
+"HEADapi/users" => Route {#130}
+"HEADapi/users/create" => Route {#131}
+"POSTapi/users" => Route {#132}
+"HEADapi/users/{user}" => Route {#133}
+"HEADapi/users/{user}/edit" => Route {#134}
+"PATCHapi/users/{user}" => Route {#135}
+"DELETEapi/users/{user}" => Route {#136}
+"HEADapi/companies" => Route {#137}
+"HEADapi/companies/create" => Route {#138}
+"POSTapi/companies" => Route {#139}
+"HEADapi/companies/{company}" => Route {#140}
+"HEADapi/companies/{company}/edit" => Route {#141}
+"PATCHapi/companies/{company}" => Route {#142}
+"DELETEapi/companies/{company}" => Route {#143}
+"HEADapi/shifts" => Route {#144}
+"HEADapi/shifts/create" => Route {#145}
+"POSTapi/shifts" => Route {#146}
+"HEADapi/shifts/{shift}" => Route {#147}
+"HEADapi/shifts/{shift}/edit" => Route {#148}
+"PATCHapi/shifts/{shift}" => Route {#149}
+"DELETEapi/shifts/{shift}" => Route {#150}
+"HEADapi/products" => Route {#151}
+"HEADapi/products/create" => Route {#152}
+"POSTapi/products" => Route {#153}
+"HEADapi/products/{product}" => Route {#154}
+"HEADapi/products/{product}/edit" => Route {#155}
+"PATCHapi/products/{product}" => Route {#156}
+"DELETEapi/products/{product}" => Route {#157}
+"HEADapi/roles" => Route {#158}
+"HEADapi/roles/create" => Route {#159}
+"POSTapi/roles" => Route {#160}
+"HEADapi/roles/{role}" => Route {#161}
+"HEADapi/roles/{role}/edit" => Route {#162}
+"PATCHapi/roles/{role}" => Route {#163}
+"DELETEapi/roles/{role}" => Route {#164}
+"HEADapi/shops" => Route {#165}
+"HEADapi/shops/create" => Route {#166}
+"POSTapi/shops" => Route {#167}
+"HEADapi/shops/{shop}" => Route {#168}
+"HEADapi/shops/{shop}/edit" => Route {#169}
+"PATCHapi/shops/{shop}" => Route {#170}
+"DELETEapi/shops/{shop}" => Route {#171}
+]
+#nameList: array:53 [
+"l5-swagger.api" => Route {#103}
+"l5-swagger.docs" => Route {#104}
+"l5-swagger.asset" => Route {#105}
+"l5-swagger.oauth2_callback" => Route {#106}
+"divisions.index" => Route {#123}
+"divisions.create" => Route {#124}
+"divisions.store" => Route {#125}
+"divisions.show" => Route {#126}
+"divisions.edit" => Route {#127}
+"divisions.update" => Route {#128}
+"divisions.destroy" => Route {#129}
+"users.index" => Route {#130}
+"users.create" => Route {#131}
+"users.store" => Route {#132}
+"users.show" => Route {#133}
+"users.edit" => Route {#134}
+"users.update" => Route {#135}
+"users.destroy" => Route {#136}
+"companies.index" => Route {#137}
+"companies.create" => Route {#138}
+"companies.store" => Route {#139}
+"companies.show" => Route {#140}
+"companies.edit" => Route {#141}
+"companies.update" => Route {#142}
+"companies.destroy" => Route {#143}
+"shifts.index" => Route {#144}
+"shifts.create" => Route {#145}
+"shifts.store" => Route {#146}
+"shifts.show" => Route {#147}
+"shifts.edit" => Route {#148}
+"shifts.update" => Route {#149}
+"shifts.destroy" => Route {#150}
+"products.index" => Route {#151}
+"products.create" => Route {#152}
+"products.store" => Route {#153}
+"products.show" => Route {#154}
+"products.edit" => Route {#155}
+"products.update" => Route {#156}
+"products.destroy" => Route {#157}
+"roles.index" => Route {#158}
+"roles.create" => Route {#159}
+"roles.store" => Route {#160}
+"roles.show" => Route {#161}
+"roles.edit" => Route {#162}
+"roles.update" => Route {#163}
+"roles.destroy" => Route {#164}
+"shops.index" => Route {#165}
+"shops.create" => Route {#166}
+"shops.store" => Route {#167}
+"shops.show" => Route {#168}
+"shops.edit" => Route {#169}
+"shops.update" => Route {#170}
+"shops.destroy" => Route {#171}
+]
+#actionList: array:53 [
+"L5Swagger\Http\Controllers\SwaggerController@api" => Route {#103}
+"L5Swagger\Http\Controllers\SwaggerController@docs" => Route {#104}
+"L5Swagger\Http\Controllers\SwaggerAssetController@index" => Route {#105}
+"L5Swagger\Http\Controllers\SwaggerController@oauth2Callback" => Route {#106}
+"App\Http\Controllers\DivisionController@index" => Route {#123}
+"App\Http\Controllers\DivisionController@create" => Route {#124}
+"App\Http\Controllers\DivisionController@store" => Route {#125}
+"App\Http\Controllers\DivisionController@show" => Route {#126}
+"App\Http\Controllers\DivisionController@edit" => Route {#127}
+"App\Http\Controllers\DivisionController@update" => Route {#128}
+"App\Http\Controllers\DivisionController@destroy" => Route {#129}
+"App\Http\Controllers\UserController@index" => Route {#130}
+"App\Http\Controllers\UserController@create" => Route {#131}
+"App\Http\Controllers\UserController@store" => Route {#132}
+"App\Http\Controllers\UserController@show" => Route {#133}
+"App\Http\Controllers\UserController@edit" => Route {#134}
+"App\Http\Controllers\UserController@update" => Route {#135}
+"App\Http\Controllers\UserController@destroy" => Route {#136}
+"App\Http\Controllers\CompanyController@index" => Route {#137}
+"App\Http\Controllers\CompanyController@create" => Route {#138}
+"App\Http\Controllers\CompanyController@store" => Route {#139}
+"App\Http\Controllers\CompanyController@show" => Route {#140}
+"App\Http\Controllers\CompanyController@edit" => Route {#141}
+"App\Http\Controllers\CompanyController@update" => Route {#142}
+"App\Http\Controllers\CompanyController@destroy" => Route {#143}
+"App\Http\Controllers\ShiftController@index" => Route {#144}
+"App\Http\Controllers\ShiftController@create" => Route {#145}
+"App\Http\Controllers\ShiftController@store" => Route {#146}
+"App\Http\Controllers\ShiftController@show" => Route {#147}
+"App\Http\Controllers\ShiftController@edit" => Route {#148}
+"App\Http\Controllers\ShiftController@update" => Route {#149}
+"App\Http\Controllers\ShiftController@destroy" => Route {#150}
+"App\Http\Controllers\ProductController@index" => Route {#151}
+"App\Http\Controllers\ProductController@create" => Route {#152}
+"App\Http\Controllers\ProductController@store" => Route {#153}
+"App\Http\Controllers\ProductController@show" => Route {#154}
+"App\Http\Controllers\ProductController@edit" => Route {#155}
+"App\Http\Controllers\ProductController@update" => Route {#156}
+"App\Http\Controllers\ProductController@destroy" => Route {#157}
+"App\Http\Controllers\RoleController@index" => Route {#158}
+"App\Http\Controllers\RoleController@create" => Route {#159}
+"App\Http\Controllers\RoleController@store" => Route {#160}
+"App\Http\Controllers\RoleController@show" => Route {#161}
+"App\Http\Controllers\RoleController@edit" => Route {#162}
+"App\Http\Controllers\RoleController@update" => Route {#163}
+"App\Http\Controllers\RoleController@destroy" => Route {#164}
+"App\Http\Controllers\ShopController@index" => Route {#165}
+"App\Http\Controllers\ShopController@create" => Route {#166}
+"App\Http\Controllers\ShopController@store" => Route {#167}
+"App\Http\Controllers\ShopController@show" => Route {#168}
+"App\Http\Controllers\ShopController@edit" => Route {#169}
+"App\Http\Controllers\ShopController@update" => Route {#170}
+"App\Http\Controllers\ShopController@destroy" => Route {#171}
+]
+}
+"url" => UrlGenerator {#110
+#routes: RouteCollection {#28}
+#request: Request {#42}
+#forcedRoot: null
+#forceScheme: null
+#cachedRoot: null
+#cachedSchema: null
+#rootNamespace: "App\Http\Controllers"
+#sessionResolver: Closure {#112
+class: "Illuminate\Routing\RoutingServiceProvider"
+this: RoutingServiceProvider {#10}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php"
+line: "68 to 70"
+}
+#keyResolver: Closure {#113
+class: "Illuminate\Routing\RoutingServiceProvider"
+this: RoutingServiceProvider {#10}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php"
+line: "72 to 74"
+}
+#formatHostUsing: null
+#formatPathUsing: null
+#routeGenerator: null
+}
+]
+#aliases: array:66 [
+"Illuminate\Foundation\Application" => "app"
+"Illuminate\Contracts\Container\Container" => "app"
+"Illuminate\Contracts\Foundation\Application" => "app"
+"Psr\Container\ContainerInterface" => "app"
+"Illuminate\Auth\AuthManager" => "auth"
+"Illuminate\Contracts\Auth\Factory" => "auth"
+"Illuminate\Contracts\Auth\Guard" => "auth.driver"
+"Illuminate\View\Compilers\BladeCompiler" => "blade.compiler"
+"Illuminate\Cache\CacheManager" => "cache"
+"Illuminate\Contracts\Cache\Factory" => "cache"
+"Illuminate\Cache\Repository" => "cache.store"
+"Illuminate\Contracts\Cache\Repository" => "cache.store"
+"Illuminate\Config\Repository" => "config"
+"Illuminate\Contracts\Config\Repository" => "config"
+"Illuminate\Cookie\CookieJar" => "cookie"
+"Illuminate\Contracts\Cookie\Factory" => "cookie"
+"Illuminate\Contracts\Cookie\QueueingFactory" => "cookie"
+"Illuminate\Encryption\Encrypter" => "encrypter"
+"Illuminate\Contracts\Encryption\Encrypter" => "encrypter"
+"Illuminate\Database\DatabaseManager" => "db"
+"Illuminate\Database\Connection" => "db.connection"
+"Illuminate\Database\ConnectionInterface" => "db.connection"
+"Illuminate\Events\Dispatcher" => "events"
+"Illuminate\Contracts\Events\Dispatcher" => "events"
+"Illuminate\Filesystem\Filesystem" => "files"
+"Illuminate\Filesystem\FilesystemManager" => "filesystem"
+"Illuminate\Contracts\Filesystem\Factory" => "filesystem"
+"Illuminate\Contracts\Filesystem\Filesystem" => "filesystem.disk"
+"Illuminate\Contracts\Filesystem\Cloud" => "filesystem.cloud"
+"Illuminate\Hashing\HashManager" => "hash"
+"Illuminate\Contracts\Hashing\Hasher" => "hash.driver"
+"Illuminate\Translation\Translator" => "translator"
+"Illuminate\Contracts\Translation\Translator" => "translator"
+"Illuminate\Log\LogManager" => "log"
+"Psr\Log\LoggerInterface" => "log"
+"Illuminate\Mail\Mailer" => "mailer"
+"Illuminate\Contracts\Mail\Mailer" => "mailer"
+"Illuminate\Contracts\Mail\MailQueue" => "mailer"
+"Illuminate\Auth\Passwords\PasswordBrokerManager" => "auth.password"
+"Illuminate\Contracts\Auth\PasswordBrokerFactory" => "auth.password"
+"Illuminate\Auth\Passwords\PasswordBroker" => "auth.password.broker"
+"Illuminate\Contracts\Auth\PasswordBroker" => "auth.password.broker"
+"Illuminate\Queue\QueueManager" => "queue"
+"Illuminate\Contracts\Queue\Factory" => "queue"
+"Illuminate\Contracts\Queue\Monitor" => "queue"
+"Illuminate\Contracts\Queue\Queue" => "queue.connection"
+"Illuminate\Queue\Failed\FailedJobProviderInterface" => "queue.failer"
+"Illuminate\Routing\Redirector" => "redirect"
+"Illuminate\Redis\RedisManager" => "redis"
+"Illuminate\Contracts\Redis\Factory" => "redis"
+"Illuminate\Http\Request" => "request"
+"Symfony\Component\HttpFoundation\Request" => "request"
+"Illuminate\Routing\Router" => "router"
+"Illuminate\Contracts\Routing\Registrar" => "router"
+"Illuminate\Contracts\Routing\BindingRegistrar" => "router"
+"Illuminate\Session\SessionManager" => "session"
+"Illuminate\Session\Store" => "session.store"
+"Illuminate\Contracts\Session\Session" => "session.store"
+"Illuminate\Routing\UrlGenerator" => "url"
+"Illuminate\Contracts\Routing\UrlGenerator" => "url"
+"Illuminate\Validation\Factory" => "validator"
+"Illuminate\Contracts\Validation\Factory" => "validator"
+"Illuminate\View\Factory" => "view"
+"Illuminate\Contracts\View\Factory" => "view"
+"Illuminate\Contracts\Notifications\Dispatcher" => "Illuminate\Notifications\ChannelManager"
+"Illuminate\Contracts\Notifications\Factory" => "Illuminate\Notifications\ChannelManager"
+]
+#abstractAliases: array:36 [
+"app" => array:4 [
+0 => "Illuminate\Foundation\Application"
+1 => "Illuminate\Contracts\Container\Container"
+2 => "Illuminate\Contracts\Foundation\Application"
+3 => "Psr\Container\ContainerInterface"
+]
+"auth" => array:2 [
+0 => "Illuminate\Auth\AuthManager"
+1 => "Illuminate\Contracts\Auth\Factory"
+]
+"auth.driver" => array:1 [
+0 => "Illuminate\Contracts\Auth\Guard"
+]
+"blade.compiler" => array:1 [
+0 => "Illuminate\View\Compilers\BladeCompiler"
+]
+"cache" => array:2 [
+0 => "Illuminate\Cache\CacheManager"
+1 => "Illuminate\Contracts\Cache\Factory"
+]
+"cache.store" => array:2 [
+0 => "Illuminate\Cache\Repository"
+1 => "Illuminate\Contracts\Cache\Repository"
+]
+"config" => array:2 [
+0 => "Illuminate\Config\Repository"
+1 => "Illuminate\Contracts\Config\Repository"
+]
+"cookie" => array:3 [
+0 => "Illuminate\Cookie\CookieJar"
+1 => "Illuminate\Contracts\Cookie\Factory"
+2 => "Illuminate\Contracts\Cookie\QueueingFactory"
+]
+"encrypter" => array:2 [
+0 => "Illuminate\Encryption\Encrypter"
+1 => "Illuminate\Contracts\Encryption\Encrypter"
+]
+"db" => array:1 [
+0 => "Illuminate\Database\DatabaseManager"
+]
+"db.connection" => array:2 [
+0 => "Illuminate\Database\Connection"
+1 => "Illuminate\Database\ConnectionInterface"
+]
+"events" => array:2 [
+0 => "Illuminate\Events\Dispatcher"
+1 => "Illuminate\Contracts\Events\Dispatcher"
+]
+"files" => array:1 [
+0 => "Illuminate\Filesystem\Filesystem"
+]
+"filesystem" => array:2 [
+0 => "Illuminate\Filesystem\FilesystemManager"
+1 => "Illuminate\Contracts\Filesystem\Factory"
+]
+"filesystem.disk" => array:1 [
+0 => "Illuminate\Contracts\Filesystem\Filesystem"
+]
+"filesystem.cloud" => array:1 [
+0 => "Illuminate\Contracts\Filesystem\Cloud"
+]
+"hash" => array:1 [
+0 => "Illuminate\Hashing\HashManager"
+]
+"hash.driver" => array:1 [
+0 => "Illuminate\Contracts\Hashing\Hasher"
+]
+"translator" => array:2 [
+0 => "Illuminate\Translation\Translator"
+1 => "Illuminate\Contracts\Translation\Translator"
+]
+"log" => array:2 [
+0 => "Illuminate\Log\LogManager"
+1 => "Psr\Log\LoggerInterface"
+]
+"mailer" => array:3 [
+0 => "Illuminate\Mail\Mailer"
+1 => "Illuminate\Contracts\Mail\Mailer"
+2 => "Illuminate\Contracts\Mail\MailQueue"
+]
+"auth.password" => array:2 [
+0 => "Illuminate\Auth\Passwords\PasswordBrokerManager"
+1 => "Illuminate\Contracts\Auth\PasswordBrokerFactory"
+]
+"auth.password.broker" => array:2 [
+0 => "Illuminate\Auth\Passwords\PasswordBroker"
+1 => "Illuminate\Contracts\Auth\PasswordBroker"
+]
+"queue" => array:3 [
+0 => "Illuminate\Queue\QueueManager"
+1 => "Illuminate\Contracts\Queue\Factory"
+2 => "Illuminate\Contracts\Queue\Monitor"
+]
+"queue.connection" => array:1 [
+0 => "Illuminate\Contracts\Queue\Queue"
+]
+"queue.failer" => array:1 [
+0 => "Illuminate\Queue\Failed\FailedJobProviderInterface"
+]
+"redirect" => array:1 [
+0 => "Illuminate\Routing\Redirector"
+]
+"redis" => array:2 [
+0 => "Illuminate\Redis\RedisManager"
+1 => "Illuminate\Contracts\Redis\Factory"
+]
+"request" => array:2 [
+0 => "Illuminate\Http\Request"
+1 => "Symfony\Component\HttpFoundation\Request"
+]
+"router" => array:3 [
+0 => "Illuminate\Routing\Router"
+1 => "Illuminate\Contracts\Routing\Registrar"
+2 => "Illuminate\Contracts\Routing\BindingRegistrar"
+]
+"session" => array:1 [
+0 => "Illuminate\Session\SessionManager"
+]
+"session.store" => array:2 [
+0 => "Illuminate\Session\Store"
+1 => "Illuminate\Contracts\Session\Session"
+]
+"url" => array:2 [
+0 => "Illuminate\Routing\UrlGenerator"
+1 => "Illuminate\Contracts\Routing\UrlGenerator"
+]
+"validator" => array:2 [
+0 => "Illuminate\Validation\Factory"
+1 => "Illuminate\Contracts\Validation\Factory"
+]
+"view" => array:2 [
+0 => "Illuminate\View\Factory"
+1 => "Illuminate\Contracts\View\Factory"
+]
+"Illuminate\Notifications\ChannelManager" => array:2 [
+0 => "Illuminate\Contracts\Notifications\Dispatcher"
+1 => "Illuminate\Contracts\Notifications\Factory"
+]
+]
+#extenders: []
+#tags: []
+#buildStack: []
+#with: []
++contextual: []
+#reboundCallbacks: array:2 [
+"request" => array:2 [
+0 => Closure {#37
+class: "Illuminate\Auth\AuthServiceProvider"
+this: AuthServiceProvider {#38}
+parameters: { …2}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php"
+line: "84 to 88"
+}
+1 => Closure {#111
+class: "Illuminate\Routing\RoutingServiceProvider"
+this: RoutingServiceProvider {#10}
+parameters: { …2}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php"
+line: "94 to 96"
+}
+]
+"routes" => array:1 [
+0 => Closure {#114
+class: "Illuminate\Routing\RoutingServiceProvider"
+this: RoutingServiceProvider {#10}
+parameters: { …2}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php"
+line: "79 to 81"
+}
+]
+]
+#globalResolvingCallbacks: []
+#globalAfterResolvingCallbacks: []
+#resolvingCallbacks: array:1 [
+"Illuminate\Foundation\Http\FormRequest" => array:1 [
+0 => Closure {#93
+class: "Illuminate\Foundation\Providers\FormRequestServiceProvider"
+this: FormRequestServiceProvider {#67}
+parameters: { …2}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Foundation/Providers/FormRequestServiceProvider.php"
+line: "34 to 38"
+}
+]
+]
+#afterResolvingCallbacks: array:1 [
+"Illuminate\Contracts\Validation\ValidatesWhenResolved" => array:1 [
+0 => Closure {#21
+class: "Illuminate\Foundation\Providers\FormRequestServiceProvider"
+this: FormRequestServiceProvider {#67}
+parameters: { …1}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Foundation/Providers/FormRequestServiceProvider.php"
+line: "30 to 32"
+}
+]
+]
+}
+#listeners: array:1 [
+"App\Events\Event" => array:1 [
+0 => Closure {#109
+class: "Illuminate\Events\Dispatcher"
+this: Dispatcher {#26}
+parameters: {
+$event: {}
+$payload: {}
+}
+use: {
+$listener: "App\Listeners\EventListener"
+$wildcard: false
+}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php"
+line: "373 to 381"
+}
+]
+]
+#wildcards: []
+#wildcardsCache: array:11 [
+"bootstrapping: Illuminate\Foundation\Bootstrap\LoadEnvironmentVariables" => []
+"bootstrapped: Illuminate\Foundation\Bootstrap\LoadEnvironmentVariables" => []
+"bootstrapping: Illuminate\Foundation\Bootstrap\LoadConfiguration" => []
+"bootstrapped: Illuminate\Foundation\Bootstrap\LoadConfiguration" => []
+"bootstrapping: Illuminate\Foundation\Bootstrap\HandleExceptions" => []
+"bootstrapped: Illuminate\Foundation\Bootstrap\HandleExceptions" => []
+"bootstrapping: Illuminate\Foundation\Bootstrap\RegisterFacades" => []
+"bootstrapped: Illuminate\Foundation\Bootstrap\RegisterFacades" => []
+"bootstrapping: Illuminate\Foundation\Bootstrap\RegisterProviders" => []
+"bootstrapped: Illuminate\Foundation\Bootstrap\RegisterProviders" => []
+"bootstrapping: Illuminate\Foundation\Bootstrap\BootProviders" => []
+]
+#queueResolver: Closure {#27
+class: "Illuminate\Events\EventServiceProvider"
+this: EventServiceProvider {#6 …}
+use: {
+$app: Application {#2}
+}
+file: "/var/www/html/CabinetXiaomi/vendor/laravel/framework/src/Illuminate/Events/EventServiceProvider.php"
+line: "18 to 20"
+}
+}
+#container: Application {#2}
+#routes: RouteCollection {#28}
+#current: null
+#currentRequest: null
+#middleware: array:8 [
+"auth" => "Illuminate\Auth\Middleware\Authenticate"
+"auth.basic" => "Illuminate\Auth\Middleware\AuthenticateWithBasicAuth"
+"bindings" => "Illuminate\Routing\Middleware\SubstituteBindings"
+"cache.headers" => "Illuminate\Http\Middleware\SetCacheHeaders"
+"can" => "Illuminate\Auth\Middleware\Authorize"
+"guest" => "App\Http\Middleware\RedirectIfAuthenticated"
+"signed" => "Illuminate\Routing\Middleware\ValidateSignature"
+"throttle" => "Illuminate\Routing\Middleware\ThrottleRequests"
+]
+#middlewareGroups: array:2 [
+"web" => array:6 [
+0 => "App\Http\Middleware\EncryptCookies"
+1 => "Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse"
+2 => "Illuminate\Session\Middleware\StartSession"
+3 => "Illuminate\View\Middleware\ShareErrorsFromSession"
+4 => "App\Http\Middleware\VerifyCsrfToken"
+5 => "Illuminate\Routing\Middleware\SubstituteBindings"
+]
+"api" => array:3 [
+0 => "throttle:60,1"
+1 => "bindings"
+2 => "Barryvdh\Cors\HandleCors"
+]
+]
++middlewarePriority: array:6 [
+0 => "Illuminate\Session\Middleware\StartSession"
+1 => "Illuminate\View\Middleware\ShareErrorsFromSession"
+2 => "Illuminate\Auth\Middleware\Authenticate"
+3 => "Illuminate\Session\Middleware\AuthenticateSession"
+4 => "Illuminate\Routing\Middleware\SubstituteBindings"
+5 => "Illuminate\Auth\Middleware\Authorize"
+]
+#binders: []
+#patterns: []
+#groupStack: array:2 [
+0 => array:3 [
+"prefix" => "api"
+"middleware" => array:1 [
+0 => "api"
+]
+"namespace" => "App\Http\Controllers"
+]
+1 => array:4 [
+"middleware" => array:1 [
+0 => "api"
+]
+"prefix" => "api/search/{id}"
+"namespace" => "App\Http\Controllers"
+"where" => []
+]
+]
+}
