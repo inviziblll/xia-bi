@@ -14,7 +14,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
-    "chart.js": "^2.7.2",
+    "chart.js": "^2.9.4",
     "devextreme": "^18.1.1-pre-18101",
     "devextreme-vue": "^18.1.1-alpha.1",
     "moment": "^2.22.0",
