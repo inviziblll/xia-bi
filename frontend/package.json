@@ -18,7 +18,7 @@
     "devextreme": "^18.1.1-pre-18101",
     "devextreme-vue": "^18.1.1-alpha.1",
     "moment": "^2.22.0",
-    "node-sass": "^4.8.3",
+    "node-sass": "^7.0.0",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "vee-validate": "^2.0.6",
